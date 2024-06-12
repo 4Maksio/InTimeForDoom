@@ -22,7 +22,7 @@ namespace MatchThreeEngine
         public void CalculateDamageValue()
         {
             int x = Round.RoundNum + 1;
-            DamageValue = (int)Mathf.Floor(x * Mathf.Log(10 * x * x));
+            DamageValue = (int)Mathf.Floor(10 * Mathf.Log(x * x));
             Display.text = DamageValue.ToString();
         }
     }
